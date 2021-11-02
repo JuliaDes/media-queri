@@ -1,0 +1,31 @@
+div {
+    height: 100px;
+    width: 100px;
+}
+
+@media screen AND (min-width: 762px) {
+    div {
+        background-color: green;
+    }
+    p:not(.green) {
+        display: none;
+    }
+}
+
+@media screen AND (min-width: 382px) AND (max-width: 761px) {
+    div {
+        background-color: orange;
+    }
+    p:not(.orange) {
+        display: none;
+    }
+}
+
+@media screen AND (max-width: 381px) {
+    div {
+        background-color: red;
+    }
+    p:not(.red) {
+        display: none;
+    }
+}
